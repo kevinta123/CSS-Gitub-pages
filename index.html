@@ -1,28 +1,15 @@
 
-    <!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
-  <head> 
-      <link rel="stylesheet" href="estilos.css">>
-    <meta charset="UTF-8">
-    <title>Mi ubicación GPS</title>
-  </head>
-    <h1>Geolocalización</h1>
-  <body>
-    <h1 id="location">Cargando ubicación...</h1>
-    <script>
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-          var latitude = position.coords.latitude;
-          var longitude = position.coords.longitude;
-          document.getElementById("location").innerHTML =
-            "Latitud: " + latitude + "<br>Longitud: " + longitude;
-        });
-      } else {
-        document.getElementById("location").innerHTML =
-          "Lo siento, tu navegador no soporta la ubicación GPS.";
-      }
-    </script>
-  </body>
+<head>
+<style>
+body {background-color: powderblue;}
+h1 {color: red;}
+p {color: blue;}
+</style>
+</head>
+<body>
+<h1>GPS</h1>
+<p> Sistema de posicionamiento global creado por los Estados Unidos de America</p>
+</body>
 </html>
-
-
